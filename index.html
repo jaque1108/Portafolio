@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>¿Quien soy?</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="main.js"></script>
+</head>
+<body>
+
+	<section id="inicio">
+		<div class="contenido">
+			<header>
+				<div class="contenido-header">
+					<h1>JB</h1>
+					<nav id="nav" class="nav-bar">
+						<ul id="links">
+							<li><a href="#inicio" class="seleccionado" onclick="seleccionar()">Inicio</a></li>
+							<li><a href="#sobremi" onclick="seleccionar(this)">¿Quién soy?</a></li>
+							<li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+							<li><a href="#portafolio" onclick="seleccionar(this)">Habilidades</a></li>
+							<li><a href="#contacto" onclick="seleccionar(this)">Contactame</a></li>
+						</ul>
+					</nav>
+
+					<div id="icono-nav" onclick="responsiveMenu()">
+						<i class="fa-solid fa-burger"></i>
+					</div>
+
+					<div class="redes">
+						<a href=""><i id="mail-icon" class="fa-sharp fa-solid fa-envelope" onmouseenter="this.className='fa-sharp fa-solid fa-truck-fast'" onmouseleave="this.className='fa-sharp fa-solid fa-envelope'"></i></a>
+						<a href=""><i id="insta-icon" class="fa-brands fa-instagram" onmouseenter="this.className='fa-solid fa-hashtag'" onmouseleave="this.className='fa-brands fa-instagram'"></i></a>
+						<a href=""><i id="twitter-icon" class="fa-brands fa-twitter" onmouseenter="this.className='fa-solid fa-tornado'" onmouseleave="this.className='fa-brands fa-twitter'"></i></a>
+					</div>
+
+				</div>
+			</header>
+			<div class="presentacion">
+				<p class="bienvenida">Bienvenidos</p>
+				<h2>Soy <span>Jaqueline Bravo</span>, Programadora.</h2>
+				<p class="descripcion">Se puede crear desde cero cualquier capricho de la imaginación, con el fin de satisfacer los placeres del intelecto.
+				</p>
+				<div>
+					<a href="portfolio">Creaciones</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sobremi">
+		<div class="contenedor-foto">
+			<img src="yo.jpg">
+		</div>
+		<div class="sobremi">
+			<p class="titulo-seccion">Sobre mi</p>
+			<h2>Hola, soy <span>Jaqueline Bravo</span></h2>
+			<h3>Programadora</h3>
+			<p class="p1">Como un alquimista moderno, creé mi primer programa, el famoso "Hola mundo", programa que todo programador debe escribir. Descubrí el gran placer intelectual que me brindaba la programación y desentrañar nuevos lenguajes que, a mis ojos, parecían tan complejos y extraños.</p>
+
+			<hr>
+
+			<p class="p2">Sin embargo, ese éxtasis de conocimiento se desvaneció pronto, tras alejarme de las máquinas durante un largo tiempo. Fué un periodo de silencio, en el que mi mente soñaba con las infinitas posibilidades que la programación podía ofrecer. </p>
+
+			<hr>
+
+			<p class="p3">Pero la llama de mi pasión nunca se apagó, y en la universidad elegí estudiar Ingeniería en Sistemas Computacionales, a pesar de que mi corazón se inclinaba hacia otras disciplinas más humanas y menos frías. Aprendí que la programación es tan filosófica como técnica, y que a través de ella podemos crear mundos imaginarios, mundos que nos ayuden a comprender mejor esta existencia que vivimos y que, a veces, se nos antoja extraña y desconcertante. Porque la programación, en esencia, es un arte que nos invita a soñar en bits y bytes, a crear nuevas realidades desde la cima de nuestra imaginación.
+			</p>
+			<p>Conoce mas sobre mi</p>
+			<a href="cvIngles.pdf"  target="_blank" download="CV_JaquelineBravoHerrera_Ingles.pdf">CV Ingles</a>
+			<a href="cvEspañol.pdf" target="_blank" download="CV_JaquelineBravoHerrera_Español.pdf">CV Español</a>
+		</div>
+	</section>
+
+	<section id="servicios">
+		<h3 class="titulo-seccion">
+			Mis Servicios
+		</h3>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Desarrollo Web</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Bootstrap</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Desarrollo de Aplicaciones Móviles</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Android</li>
+					<li>IOS</li>
+					<li>UX</li>
+					<li>UI</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Desarrollo Software</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Análisis</li>
+					<li>Diseño</li>
+					<li>Mantenimiento</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Desarrollo de Bases de Datos</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Análisis</li>
+					<li>Model ER</li>
+					<li>Desarrollo</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Programadora</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>WEB</li>
+					<li>App</li>
+					<li>UX</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Programadora</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>WEB</li>
+					<li>App</li>
+					<li>UX</li>
+				</ul>
+				<p>Servicios especializados acoplado a las necesidades del cleinte.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="contenedor-skills" id="skills">
+		
+		<h3>Habilidades</h3>
+		<div class="skills">
+			<div class="info">
+				<p><span class="lista"></span>HTML & CSS</p>
+				<span class="porcentaje">70%</span>
+			</div>
+			<div class="barra">
+				<div id="html" class="barra-progreso1"></div>
+			</div>
+		</div>
+
+		<div class="skills">
+			<div class="info">
+				<p><span class="lista"></span>Java</p>
+				<span class="porcentaje">60%</span>
+			</div>
+			<div class="barra">
+				<div id="js" class="barra-progreso2"></div>
+			</div>
+		</div>
+
+		<div class="skills">
+			<div class="info">
+				<p><span class="lista"></span>Bases de Datos</p>
+				<span class="porcentaje">50%</span>
+			</div>
+			<div class="barra">
+				<div id="bd" class="barra-progreso3"></div>
+			</div>
+		</div>
+
+		<div class="skills">
+			<div class="info">
+				<p><span class="lista"></span>JavaScript</p>
+				<span class="porcentaje">40%</span>
+			</div>
+			<div class="barra">
+				<div id="java" class="barra-progreso4"></div>
+			</div>
+		</div>
+	</div>
+
+	<section id="portafolio">
+		<h3 class="titulo-seccion">Mis Proyectos</h3>
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="fondo2.jpg">
+				<div class="info">
+				  <h4>Descripción del proyecto</h4>
+				  <p>Diseño Web</p>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto">
+		<h3 class="titulo-seccion">Contactame Ahora</h3>
+		<div class="contenedor-form">
+			<form action="">
+				<div class="fila mitad">
+					<input type="text" placeholder="Nombre Completo" class="input-mitad">
+					<input type="email" placeholder="Email" class="input-mitad">
+				</div>
+				<div class="fila">
+					<input class="input-full" type="text" placeholder="Tema...">
+				</div>
+				<div class="fila">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+				</div>
+				<input type="submit" value="Enviar Mensaje" class="btn-enviar" name="">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>Powered By LaMaga369</p>
+		<div class="redes">
+						<a href=""><i id="mail-icon" class="fa-sharp fa-solid fa-envelope" onmouseenter="this.className='fa-sharp fa-solid fa-truck-fast'" onmouseleave="this.className='fa-sharp fa-solid fa-envelope'"></i></a>
+						<a href=""><i id="insta-icon" class="fa-brands fa-instagram" onmouseenter="this.className='fa-solid fa-hashtag'" onmouseleave="this.className='fa-brands fa-instagram'"></i></a>
+						<a href=""><i id="twitter-icon" class="fa-brands fa-twitter" onmouseenter="this.className='fa-solid fa-tornado'" onmouseleave="this.className='fa-brands fa-twitter'"></i></a>
+					</div>
+	</footer>
+
+</body>
+</html>
+
