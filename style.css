@@ -214,14 +214,14 @@ display: flex;
 
 
 #sobremi .contenedor-foto{
-	max-width: 700px;
-  margin-right: 200px;
+	max-width: 400px;
+  margin-right: 80px;
 }
 
 
 #sobremi .contenedor-foto img{
 	padding: 20px;
-	width: 200%;
+	width: 100%;
 	border-radius: 20px;
 	background-color: #f3f3f3;
 	filter: grayscale(1);
@@ -406,7 +406,7 @@ transition: .5s;
 /* seccion habilidades */
 
 .contenedor-skills{
-	background: linear-gradient(#724CF9, rgba(33, 16, 16, 0.8)), url("matrix.png");
+	background: linear-gradient(#724CF9, rgba(33, 16, 16, 0.8)), url("fondo2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
